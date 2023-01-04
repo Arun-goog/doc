@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Quiz</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Collective Nouns</title>
+    
+          
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid">       
+
+        <div id="container" >
+
+            
+                    <div id="login"  >                        
+                        <label><b>Enter Code</b></label><br>            
+                        <input type="text" placeholder="#Googlain"><br>					                        
+                        <button id="start" onclick="startQuiz();">Tap <br> Here!</button>
+                    </div>  
+                    <div id="vold"><h5>Jacknut</h6></div> 
+
+                    <div id="quiz" style="background-color: rgb(228, 238, 238);  display: none">                       
+                        <div id="qImg" > <p>Documents Required</p></div>
+                        <div id="searchdiv">
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn">Search</button>
+                            <div id="myDropdown" class="dropdown-content">
+                              <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                              <button onclick="renderQuestion(0)">Pancard</button>
+                              <a  onclick="renderQuestion(1)">Passport</a>
+                              <a href="">Blog</a>
+                              <a href="">Contact</a>
+                              <a href="">Custom</a>
+                              <a href="">Support</a>
+                              <a href="">Tools</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div id="question"></div>
+                        <div id="choices" style="display: none;">
+                            <div class="docu" id="docs"></div>
+
+                            <div class="choice" id="opt5" ></div>
+                            
+                           
+                        </div>
+                       
+                    </div>
+                    
+                    
+                </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
