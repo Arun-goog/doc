@@ -9,6 +9,24 @@ const Servicecharge = document.getElementById("fee");
 
 let qnsIndex = 0;
 
+function PasswordCheck(){
+
+    
+    var passdata =document.getElementById("pswd").value;
+    
+
+    if( passdata ==="1342"){
+        
+        startQuiz();
+
+    } else{
+        alert("Incorrect Code")
+
+        return false ;
+       
+    }
+
+}
 
 // create our questions
 let questions = [
