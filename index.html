@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Documents Required</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    
+          
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid">       
+
+        <div id="container" >
+
+            
+                    <div id="login"  >                        
+                                 
+                        <input type="text" style="border-radius: 10px; text-align: center;" placeholder="Enter code"><br>					                        
+                        <button id="start" onclick="startQuiz();">Tap <br> Here!</button>
+                    </div>  
+                    <div id="vold"><h5>support<br> +91 8075565598</h6></div> 
+
+                    <div id="quiz" style="  display: none">                       
+                        <div id="qImg" > <p>Documents Required</p></div>
+                        
+                            <div class="dropdown">
+                                <button onclick="myFunction()" class="dropbtn">Search</button>
+                                <div id="myDropdown" class="dropdown-content">
+                                  <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                                  
+                                  <a onclick="renderQuestion(0)">Aadhaar PVC</a>
+                                  <a onclick="renderQuestion(33)">Aims Registration</a>
+                                  <a onclick="renderQuestion(1)">Birth Registration</a>
+                                  <a onclick="renderQuestion(2)">Caste Certificate</a>
+                                  <a onclick="renderQuestion(3)">Community Certificate</a>
+                                  <a onclick="renderQuestion(4)">Driving Licence Duplicate</a>
+                                  <a onclick="renderQuestion(5)">Employment Registration</a>
+                                  <a onclick="renderQuestion(20)">Employment Renewal</a>
+                                  <a onclick="renderQuestion(6)">EshramCard</a>
+                                  <a onclick="renderQuestion(7)">Income certificate</a>
+                                  <a onclick="renderQuestion(8)">KSEB Newconnection</a>
+                                  <a onclick="renderQuestion(9)">Kudikadam</a>
+                                  <a onclick="renderQuestion(10)">LandTax</a>
+                                  <a onclick="renderQuestion(11)">Marriage Registration</a>
+                                  <a onclick="renderQuestion(12)">None creamy layer</a>
+                                  <a onclick="renderQuestion(13)">One and Same Certificate</a>
+                                  <a onclick="renderQuestion(14)">Passport</a>
+                                  <a onclick="renderQuestion(15)">Pancard</a>
+                                  <a onclick="renderQuestion(16)">Possession Certificate</a>
+                                  <a onclick="renderQuestion(17)">Building Tax</a>                           
+                                  <a onclick="renderQuestion(18)">PSC Registration</a>
+                                  <a onclick="renderQuestion(19)">Rationcard PVC</a>
+                                  <a onclick="renderQuestion(21)">SSC Registration</a>
+                                  <a onclick="renderQuestion(22)">SSC Examination</a>                  
+                                  <a onclick="renderQuestion(23)">Pension</a>                  
+                                  <a onclick="renderQuestion(24)">Sabarimala Booking</a>
+                                  <a onclick="renderQuestion(25)">Special Permit</a>
+                                  <a onclick="renderQuestion(26)">Voters ID New</a>
+                                  <a onclick="renderQuestion(27)">Egrants Scholorship</a>
+                                  <a onclick="renderQuestion(28)">Pre/Post Matric Scholorship</a>
+                                  <a onclick="renderQuestion(29)">Pravasi Registration</a>
+                                  <a onclick="renderQuestion(30)">PlusOne Allotment</a>
+                                  <a onclick="renderQuestion(31)">Rationcard New</a>
+                                  <a onclick="renderQuestion(32)">Pravasi Marriage Assistance</a>
+                                  <a onclick="renderQuestion(33)">Aims Registration</a>
+                                  <a onclick="renderQuestion(34)">Aims Land Verification</a>
+                                  <a onclick="renderQuestion(35)">Employment Special Renewal</a>
+                                  <a onclick="renderQuestion(36)">PM Kisan Registration</a>
+                                </div>
+                              </div>
+                       
+                        <div id="question"></div>
+                        <div id="choices" style="display: none;">
+                            <div class="docu" id="docs"></div>
+
+                            <div class="choice" id="opt5" ></div>
+                            <div style="background-color: rgb(28, 7, 146);" id="fee"  >   </div>
+                           
+                        </div>
+                       
+                    </div>
+                    
+                    
+                </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
